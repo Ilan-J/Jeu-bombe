@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+}
+
+#title {
+    margin-bottom: 5px;
+}
+
+.board {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    max-width: 648px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#control {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tile {
+    width: 160px;
+    height: 160px;
+    background-color: #00f;
+    border: solid 1px #fff;
+}
+
+.tile:hover {
+    border: solid 1px #000;
+}
+
+@media (max-width: 790px) {
+    .board {
+        max-width: 520px;
+    }
+    .tile {
+        width: 128px;
+        height: 128px;
+    }
+}
+@media (max-width: 530px) {
+    .board {
+        max-width: 264px;
+    }
+    .tile {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+
+
+/* Not from me :( */
+
+#rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    letter-spacing: 5px;
+    animation: colorRotate 3s linear 0s infinite;
+}
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}

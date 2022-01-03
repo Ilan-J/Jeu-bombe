@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jeu Bombe</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=corner"/>
+
+        <link rel="stylesheet" href="./bombe.css"/>
+
+        <script src="./bombe.js" defer></script>
+    </head>
+
+    <body>
+        <h1 id="title">Trouve la bombe</h1>
+
+        
+
+        <div class="board">
+
+            <div>
+                <h2 id="rainbow"></h2>
+            </div>
+            <div id="control">
+                <!-- <button onclick="resetGame()">Reset</button> -->
+                <p id="score">Essais : 0</p>
+            </div>
+
+            <div class="row" id="row-0">
+                <img class="tile" id="tile-0-0" src="./tile.png" alt="Tile" onclick="doClick('#tile-0-0')"/>
+                <img class="tile" id="tile-0-1" src="./tile.png" alt="Tile" onclick="doClick('#tile-0-1')"/>
+                <img class="tile" id="tile-0-2" src="./tile.png" alt="Tile" onclick="doClick('#tile-0-2')"/>
+                <img class="tile" id="tile-0-3" src="./tile.png" alt="Tile" onclick="doClick('#tile-0-3')"/>
+            </div>
+            <div class="row" id="row-1">
+                <img class="tile" id="tile-1-0" src="./tile.png" alt="Tile" onclick="doClick('#tile-1-0')"/>
+                <img class="tile" id="tile-1-1" src="./tile.png" alt="Tile" onclick="doClick('#tile-1-1')"/>
+                <img class="tile" id="tile-1-2" src="./tile.png" alt="Tile" onclick="doClick('#tile-1-2')"/>
+                <img class="tile" id="tile-1-3" src="./tile.png" alt="Tile" onclick="doClick('#tile-1-3')"/>
+            </div>
+            <div class="row" id="row-2">
+                <img class="tile" id="tile-2-0" src="./tile.png" alt="Tile" onclick="doClick('#tile-2-0')"/>
+                <img class="tile" id="tile-2-1" src="./tile.png" alt="Tile" onclick="doClick('#tile-2-1')"/>
+                <img class="tile" id="tile-2-2" src="./tile.png" alt="Tile" onclick="doClick('#tile-2-2')"/>
+                <img class="tile" id="tile-2-3" src="./tile.png" alt="Tile" onclick="doClick('#tile-2-3')"/>
+            </div>
+            <div class="row" id="row-3">
+                <img class="tile" id="tile-3-0" src="./tile.png" alt="Tile" onclick="doClick('#tile-3-0')"/>
+                <img class="tile" id="tile-3-1" src="./tile.png" alt="Tile" onclick="doClick('#tile-3-1')"/>
+                <img class="tile" id="tile-3-2" src="./tile.png" alt="Tile" onclick="doClick('#tile-3-2')"/>
+                <img class="tile" id="tile-3-3" src="./tile.png" alt="Tile" onclick="doClick('#tile-3-3')"/>
+            </div>
+        </div>
+    </body>
+</html>
